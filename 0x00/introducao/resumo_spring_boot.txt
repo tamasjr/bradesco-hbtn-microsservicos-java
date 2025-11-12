@@ -1,0 +1,29 @@
+O que é Spring Boot Framework?
+R.: O Spring Boot é um framework Java que simplifica o desenvolvimento de aplicações baseadas no ecossistema Spring.
+Ele foi criado para facilitar a criação de aplicações standalone, especialmente microsserviços, eliminando a necessidade
+de configurações complexas e extensas.
+
+Quais são os benefícios e recursos que Spring Boot fornece?
+R.:
+    Configuração automática baseada nas dependências do projeto.
+    Servidores embarcados (Tomcat, Jetty, Undertow) para aplicações standalone.
+    Facilidade na criação de microsserviços.
+    Eliminação da necessidade de configurações XML extensas.
+    Gerenciamento simplificado de dependências com starters.
+    Recursos prontos para produção: métricas, health checks e monitoramento.
+    Suporte integrado para configuração externa (properties, YAML).
+    Ferramentas para testes e empacotamento de aplicações.
+
+Como é feita a adição de novas dependências (JPA, Hibernate, etc…) ?
+R.: A adição de novas dependências em um projeto Spring Boot é feita através do arquivo de configuração de dependências,
+geralmente o `pom.xml` para projetos Maven ou o `build.gradle` para projetos Gradle. Spring Boot oferece "starters",
+que são conjuntos pré-configurados de dependências para facilitar a inclusão de funcionalidades específicas, como JPA, Hibernate, Web, Security, entre outros.
+
+Na sua opinião, qual é a melhor IDE para trabalhar com o Spring Boot: Spring Tools Suites, IntelliJ IDEA, Eclipse ou NetBeans ?
+R.: Na minha opinião, a melhor IDE para trabalhar com Spring Boot é o IntelliJ IDEA devido à sua excelente integração com o ecossistema Spring,
+suporte robusto para desenvolvimento Java, recursos avançados de refatoração e depuração, além de uma interface amigável que facilita o
+desenvolvimento de aplicações Spring Boot.
+
+O que é Spring Initializr?
+R.: O Spring Initializr é uma ferramenta online que permite aos desenvolvedores gerar rapidamente a estrutura inicial de um projeto Spring Boot,
+escolhendo dependências, versão do Spring Boot, linguagem de programação e outras configurações essenciais para iniciar o desenvolvimento de uma aplicação.
