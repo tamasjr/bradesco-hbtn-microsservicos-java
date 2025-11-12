@@ -7,7 +7,7 @@ import java.util.List;
 
 @Repository
 public class SongRepository {
-    private List<Song> list = new ArrayList<>();
+    private List<Song> list = new ArrayList<Song>();
 
     public SongRepository() {
         list.add(new Song(1, "Bohemian Rhapsody", "Queen", "A Night at the Opera", "1975"));
@@ -32,10 +32,16 @@ public class SongRepository {
     }
 
     public void updateSong(Song s) {
-        // TODO
+        for (int i = 0; i < list.size(); i++) {
+            if (list.get(i).getId().equals(s.getId())) {
+                list.set(i, s);
+                return;
+            }
+        }
     }
 
     public void removeSong(Song s) {
-        // TODO
+        list.removeIf(song -> song.getId().equals(s.getId()));
     }
 }
+
